@@ -258,10 +258,10 @@ static int pmw3610_async_init_check_ob1(const struct device *dev) {
         return err;
     }
 
-    if (product_id != PMW3610_PRODUCT_ID) {
-        LOG_ERR("Incorrect product id 0x%x (expecting 0x%x)!", product_id, PMW3610_PRODUCT_ID);
-        return -EIO;
-    }
+    //if (product_id != PMW3610_PRODUCT_ID) {
+    //    LOG_ERR("Incorrect product id 0x%x (expecting 0x%x)!", product_id, PMW3610_PRODUCT_ID);
+    //    return -EIO;
+    //}
 
     return 0;
 }
